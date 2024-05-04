@@ -1,0 +1,5 @@
+running the other containers:
+
+
+docker build --tag ms-eureka .
+docker run --name ms-eureka --network ms-network -e EUREKA_SERVER=ms-eureka -e RABBITMQ_SERVER rabbitmq ms-eureka
